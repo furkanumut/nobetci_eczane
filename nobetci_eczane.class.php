@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 /**
  * Class 		Nöbetçi Eczane
  * @category	PHP Data Bot
@@ -35,7 +33,7 @@ class nobetci_eczane {
 				$veri["$i"]=array(
 					"ad" => $ezc_ad[1][$i],
 					"adres" => $ezc_adres[2][$i],
-					"ilce" => $ezc_ilce[1][$i],
+					"ilce" => $ezc_ilce[2][$i],
 					"telefon" => $ecz_tel[1][$i]
 				);
 			}
