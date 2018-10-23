@@ -7,7 +7,7 @@ ini_set('display_errors', 1);
  * @author		Furkan Umut Ceylan
  * @license 	https://www.gnu.org/licenses/gpl.txt  GPL License 3
  * @mail 		facfur3@gmail.com
- * @date 		14.2.2014
+ * @date 		23.10.2018
  */
 
 
@@ -24,7 +24,7 @@ class nobetci_eczane {
 		//Filitreleme işlemleri
 			$ezc_ad='@<strong >(.*?)</strong>@si';
 			$ezc_adres='@</a></span>--><span(.*?)>(.*?)<br><a href="tel:@si';
-			$ezc_ilce='@ki Nöbetçi Eczaneler" alt="Karaman (.*?) Nöbetçi Eczaneler,@si';
+			$ezc_ilce='@ki Nöbetçi Eczaneler" alt="(.*?) (.*?) Nöbetçi Eczaneler,@si';
 			$ecz_tel='@<br><a href="tel:(.*?)" >@si';
 			preg_match_all($ezc_ad, $ziyaret, $ezc_ad);
 			preg_match_all($ezc_adres, $ziyaret, $ezc_adres); 
